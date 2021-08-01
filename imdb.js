@@ -203,11 +203,11 @@ function updateContent(selectedMovies) {
     if (movie.contentRating === 'U') {
       countU += 1;
     } else if (movie.contentRating === '15') {
-      countU += 1;
+      count15 += 1;
     } else if (movie.contentRating === '12A') {
-      countU += 1;
+      count12A += 1;
     } else if (movie.contentRating === 'PG') {
-      countU += 1;
+      countPG += 1;
     }
   });
 
