@@ -12,13 +12,31 @@
     <div id="container">
       <div id="title">
         <h1>IMDB Rating</h1>
-        <p>Top 10 grossing english movies</p>
+        <p>Top 10 grossing english movies
+        <!--    <a style="padding-left:25px" href="#votes" class="tooltip">&#8659;
+                <span class="tooltiptext"> Go to Bottom </span>
+              </a>
+              -->
+        </p>
       </div>
 
       <div id="movieInfo">
         <div id="movieList"></div>
 
-        <div id="moviePost"></div>
+        <div id="moviePost">
+            <div id="askToClick">
+                <ul>
+                    <li>
+                        Click movies in the <strong>LEFT</strong> to see the details here.    
+                    </li>
+                    <li style="padding-top:15px;">
+                        Select on the <strong>CHECKBOXES</strong> and click the <strong>SUBMIT</strong> button to generate charts below.    
+                    </li>
+                </ul>
+               
+            </div>
+            
+        </div>
       </div>
 
       <form id="choiceSubmit">
@@ -45,7 +63,11 @@
         <div id="legend"></div>
         <svg id="gross"></svg>
         <svg id="duration"></svg>
+        <div id="goToTop"></div>
         <svg id="votes"></svg>
+        
+           
+        </div>
 
       </div>
 

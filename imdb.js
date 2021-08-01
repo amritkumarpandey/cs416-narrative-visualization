@@ -156,12 +156,14 @@ document.querySelector('#choiceSubmit').addEventListener('submit', function (eve
     d3.selectAll('#charts').selectAll('div').html(null);
     d3.selectAll('#charts').selectAll('svg').html(null);
     createSelection(choiceMap);
+    document.getElementById('choiceSubmit').scrollIntoView();
   }
   else {
     document.getElementById('feedback').innerText = 'Select atleast 1 checkbox.';
     // clear old selections
     d3.selectAll('#charts').selectAll('div').html(null);
     d3.selectAll('#charts').selectAll('svg').html(null);
+    document.getElementById('container').scrollIntoView();
   }
 });
 
@@ -185,6 +187,28 @@ function createSelection(choiceMap) {
   updateGross(selectedMovies);
   updateDuration(selectedMovies);
   updateVotes(selectedMovies);
+  updateGoToTop();
+}
+
+function updateGoToTop(){
+  d3.select('#goToTop')
+  .html(
+    `
+    <a style="padding-right:25px" href="#container" class="tooltip">&#8657;
+      <span class="tooltiptext"> Go to top </span>
+    </a>
+    
+    <a style="padding-left:25px" href="#votes" class="tooltip">&#8659;
+      <span class="tooltiptext"> Go to Bottom </span>
+    </a>
+    `
+  /*`
+  <p>
+   <a style="padding-right:5px" href="#container"><span>&#8657;</span></a>
+   <a style="padding-left:15px" href="#votes><span>&#8659;</span></a>
+   </p>
+  ` */
+  );
 }
 
 function updateContent(selectedMovies) {
@@ -319,7 +343,7 @@ function updateVotes(selectedMovies){
       return cxValue;
     })
   .attr('cy','150')
-  .style('fill', `${movie.color}`);;
+  .style('fill', `${movie.color}`);
 
   d3.select('#votes')
   .append('text')
