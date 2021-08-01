@@ -28,7 +28,7 @@ body{
 
 #movieInfo{
     display: flex;
-    height: 300px;
+    height: 400px;
     justify-content: center;
 }
 
@@ -56,13 +56,15 @@ body{
     color: rgb(63,63,63);
     font-weight: 400;
     font-size: 18px;
+    text-align: left;
+    padding: 5px;
 }
 
 #moviePost p span{ 
     color: #005cc8;;
     font-weight: 700;
     font-size: 18px;
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
 
 #choiceSubmit{ 
