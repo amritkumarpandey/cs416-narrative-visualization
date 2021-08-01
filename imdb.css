@@ -1,0 +1,186 @@
+*{
+    font-family: 'Inter';
+}
+
+body{
+    text-align: center;
+}
+
+#container{
+    width: 90%;
+    display: inline-block;
+}
+
+#title{
+    color: #005cc8;
+}
+
+#title h1{
+    margin-bottom: 5px;
+}
+
+#title p{
+    margin-top: 5px;
+    color: rgb(124,124,124);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#movieInfo{
+    display: flex;
+    height: 300px;
+}
+
+#movieList{
+    width:600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(241,241,241,0.4);
+}
+
+#moviePost{
+    width:300px;
+    align-items: center;
+    background-color: rgb(241,241,241,0.4);
+    padding: 5px;
+}
+
+#moviePost h2{ 
+    color: #005cc8;
+}
+
+#moviePost p{ 
+    color: rgb(63,63,63);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#moviePost p span{ 
+    color: #005cc8;;
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+
+#choiceSubmit{ 
+    padding-top: 20px;
+   
+}
+label{
+    padding: 5px;
+    color: gray;
+}
+
+#submit{
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: white;
+    border:2px solid #005CCB;
+    border-radius: 5px;
+    color: #005cc8;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#submit:hover{
+    background-color: #005cc8;
+    color: white;
+}
+
+#submit:focus{
+    outline: none;
+}
+
+#cbu,#cb15,#cb12a,#cbpg{
+    cursor: pointer;
+}
+
+#feedback{
+    color:salmon;
+}
+
+#charts{
+    display: inline-table;
+}
+
+#cont{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cont div{
+    max-width: 100px;
+}
+
+#cont h2,#cont p {
+    margin: 0;
+}
+
+#cont h2 {
+    color: #005cc8;
+
+}
+
+#cont p {
+   color: rgb(63,63,63); 
+}
+
+#legend{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+
+#legend>div{
+    height: 25px;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+#legend > div > div{
+    border-radius: 10px;
+}
+
+#legend > div > p{
+    margin: 0 0 0 5px;
+    font-size: small;
+    color: gray;
+}
+
+#gross{
+    height: 300px;
+    width: 600px;
+
+}
+
+#duration{
+    height: 300px;
+    width: 300px;
+}
+
+#votes{
+    width: 900px;
+    height: 300px;
+    justify-content: space-around;
+}
+
+.movieSelect{
+    background-color: rgb(241,241,241);
+    color: gray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.movieSelect:hover{
+    background-color: #005cc8;
+    color: white;
+    font-weight: bold;
+}
