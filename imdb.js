@@ -292,7 +292,7 @@ function updateGross(selectedMovies){
 
   d3.select('#gross')
   .insert('text','rect')
-  .text('Gross selections in USD Million.')
+  .text('Gross Collections in USD (Million $).')
   .attr('x',0)
   .attr('y',15)
   .style('font-size',16)
